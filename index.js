@@ -241,16 +241,17 @@ function get20s(array){
 
   array.forEach(element => {
     
-    let splitArray = element.years.split(" ");
-    splitArray.splice(1,1);
-    // console.log(splitArray);
-
-    splitArray.forEach(element => {
-      let parsedArray = []
-      parsedArray.push(parseInt(element));
-      console.log (splitArray);
+    element.years = element.years.split(" - ");
+    element.years.forEach(element => {
+      element = parseInt(element);
     });
+
+    if (element.years[0] >= 1900 && element.years[1] < 2000) {
+      filteredArr.push(element);
+    }
   });
+
+  console.log("This is the answer to task 4 ---> " , filteredArr);
 }
 
 get20s(artists);
