@@ -76,6 +76,8 @@ nav{
 }
 nav a{
     color:#626262;
+    padding: 0px 20px;
+    line-height: 1.85rem;
 }
 nav span{
     border-left:3px solid #626262;
@@ -128,11 +130,23 @@ button:hover{
 }
 
 .artist{
-    width:40%;
+    width:47%;
     text-align:center;
 }
 .artist img{
-    width:100%;
+    width:85%;
+    height: 25vw;
+    margin-bottom: 10px;
+}
+
+.artist > a {
+    font-size: 1.75rem;
+}
+
+.bio {
+    padding-top: 10px;
+    font-size: .9rem;
+    margin: 0;
 }
 
 @media screen and (max-width: 500px) {
