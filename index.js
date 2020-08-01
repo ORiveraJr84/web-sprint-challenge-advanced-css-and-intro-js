@@ -239,11 +239,18 @@ function get20s(array){
 
   let filteredArr = [];
 
-  
-  let splitArray = array[i].years.split(" ");
+  array.forEach(element => {
+    
+    let splitArray = element.years.split(" ");
+    splitArray.splice(1,1);
+    // console.log(splitArray);
 
-
-
+    splitArray.forEach(element => {
+      let parsedArray = []
+      parsedArray.push(parseInt(element));
+      console.log (splitArray);
+    });
+  });
 }
 
 get20s(artists);
