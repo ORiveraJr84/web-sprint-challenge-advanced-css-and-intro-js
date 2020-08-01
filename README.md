@@ -35,7 +35,7 @@ You are expected to be able to answer questions in these areas. Your responses c
 
 Follow these steps to set up your project:
 
-- [ ] Create a forked copy of this project.
+- [✓] Create a forked copy of this project.
 - [ ] Add your Team Lead as collaborator on Github.
 - [ ] Clone your OWN version of the repository (Not Lambda's by mistake!).
 - [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
